@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: hola informatica
-        runs: echo "Bienvenido a despiegle automatizado"
+        run: echo "Bienvenido a despiegle automatizado"
 
