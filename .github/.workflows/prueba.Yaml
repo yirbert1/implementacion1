@@ -1,6 +1,6 @@
 on: [push]
 
-job:
+jobs:
   hola:
     runs-on: ubuntu-latest
     steps:
