@@ -1,0 +1,9 @@
+on: [push]
+
+jobs:
+  hola:
+    runs-on: ubuntu-latest
+    steps:
+      - name: hola informatica
+        run: echo "Bienvenido a despiegle automatizado"
+

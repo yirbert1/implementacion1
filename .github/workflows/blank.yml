@@ -1,0 +1,7 @@
+servidor:
+  puerto: 8080
+  activo: true
+  rutas:
+    - /inicio
+    - /login
+    - /perfil
