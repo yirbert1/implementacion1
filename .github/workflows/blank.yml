@@ -1,7 +1,27 @@
-servidor:
-  puerto: 8080
-  activo: true
-  rutas:
-    - /inicio
-    - /login
-    - /perfil
+name: 1. CI Base y Bienvenida
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  # Permite ejecutar manualmente
+  workflow_dispatch:
+
+jobs:
+  bienvenida:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repositorio
+        uses: actions/checkout@v4
+
+      - name: Mensaje de Bienvenida
+        run: echo "¡Iniciando el Flujo de CI para el proyecto de cursos!"
+
+      - name: Listar la estructura
+        run: ls -R
+        
+      - name: Simular paso de compilación/prueba
+        run: echo "Aquí irían los comandos para compilar, instalar dependencias o correr pruebas genéricas."
