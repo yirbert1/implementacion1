@@ -1,9 +1,7 @@
-on: [push]
-
-jobs:
-  hola:
-    runs-on: ubuntu-latest
-    steps:
-      - name: hola informatica
-        run: echo "Bienvenido a despiegle automatizado"
-
+servidor:
+  puerto: 8080
+  activo: true
+  rutas:
+    - /inicio
+    - /login
+    - /perfil
