@@ -1,0 +1,12 @@
+name: Etiquetado Automático de Cursos
+
+on: [pull_request]
+
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/labeler@v4
+      with:
+        repo-token: "${{ secrets.GITHUB_TOKEN }}"
+        sync-labels: true
