@@ -1,10 +1,7 @@
-cursos:
-  -Talleres:
-    -Inf
-    -CyP
-    -Muebles
-  -cursosprimerciclo:
-    -tercerosA
-    -tercerosB
-    -tercerosC
-
+servidor:
+  puerto: 8080
+  activo: true
+  rutas:
+    - /inicio
+    - /login
+    - /perfil
