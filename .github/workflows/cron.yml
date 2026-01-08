@@ -1,0 +1,20 @@
+name: Limpieza Nocturna
+on:
+  schedule:
+    - cron: '0 0 * * *' # Se ejecuta cada día a las 00:00 (Medianoche)
+
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v9
+        with:
+          days-before-stale: 15       # Marca como "viejo" tras 15 días
+          days-before-close: 5        # Lo cierra 5 días después
+          stale-issue-message: 'Este issue está muy viejo y se cerrará pronto.'
+          close-issue-message: 'Cerrado por inactividad. 🧹'
