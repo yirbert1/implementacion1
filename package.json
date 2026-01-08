@@ -2,9 +2,9 @@
 
   "name": "tu-proyecto",
   "version": "1.0.0",
-  "scripts": {
-    "test": "echo \"Haciendo tests...\" && exit 0",
-    "build-docs": "echo \"Generando documentación...\"" 
+    "scripts": {
+  "test": "echo \"Simulando tests...\" && exit 0",
+  "build-docs": "echo \"Todo listo para publicar\"" 
   },
   "keywords": [],
   "author": "",
