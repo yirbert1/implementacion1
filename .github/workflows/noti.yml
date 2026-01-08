@@ -1,0 +1,13 @@
+name: Detector de Cambios
+on:
+  push:
+    paths:
+      - 'docs/**'  # SOLO se activa si tocas algo dentro de la carpeta docs
+      - '*.html'   # O si tocas archivos HTML
+
+jobs:
+  aviso:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🚨 ¡Atención! Se han detectado cambios en la página web."
+      - run: echo "Asegúrate de revisar cómo se ve el diseño."
