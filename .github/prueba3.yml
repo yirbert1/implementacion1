@@ -1,0 +1,15 @@
+name: Mi Super Workflow
+
+on: [push]
+
+jobs:
+  job_1_compilar:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Compilando..."
+
+  job_2_testear:
+    needs: job_1_compilar # Este job espera al primero
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Testeando..."
